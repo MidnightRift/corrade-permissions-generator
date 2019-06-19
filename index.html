@@ -136,7 +136,7 @@
 <body>
 
 <div id="logo">
-    <img src="logo.png">
+    <img src="logo.png" alt="logo">
 </div>
 
 <h1 id="pageTitle">Corrade Permissions Generator</h1>
@@ -271,7 +271,6 @@
         }
 
 
-        console.log(ctx)
     }
 
     let permString = document.getElementById('permTextString');
@@ -303,7 +302,7 @@
 
             let _fieldset = document.createElement("div"); // no longer a actual fieldset element because of a bug in chrome with it being flex.
             _fieldset.classList.add("fieldsetGroup");
-            _fieldset.style.borderColor = item.color
+            _fieldset.style.borderColor = item.color;
 
             let _legend = document.createElement('div');
             _legend.classList.add('fieldsetLegend');
