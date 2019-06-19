@@ -1,0 +1,122 @@
+/*mini reset*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    vertical-align: top;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Arial";
+    background-image: url("../files/simplebackground.png");
+    background-repeat: repeat;
+
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    width: 128px;
+    height: 128px;
+    transform: rotateZ(45deg);
+    background-color: rgba(1, 1, 1, .4);
+    border: 6px black solid;
+}
+
+#logo img {
+    width: 85%;
+    height: 85%;
+    transform: rotateZ(-45deg);
+    position: relative;
+    top: 3px;
+    left: 3px;
+
+}
+
+.fieldsetGroup {
+    position: relative;
+    min-width: 400px;
+    width: 600px;
+    max-width: 80%;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    border: 6px black solid;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(255, 255, 255, .9);
+
+
+}
+
+.fieldsetGroup > label, .fieldsetGroup > input {
+
+}
+
+.fieldsetGroup > label:not(:last-child) {
+    margin-right: 20px;
+}
+
+.fieldsetGroup > input {
+    margin-right: 5px;
+
+    cursor: pointer;
+}
+
+#permTextString {
+    border: 6px black solid;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    width: 400px;
+    background-color: rgba(255, 255, 255, .9);
+}
+
+#titleContainer {
+    text-align: center;
+    margin: 0 auto 50px auto;
+
+}
+
+
+#pageTitle {
+    font-weight: bold;
+    text-align: center;
+}
+
+.fieldsetLegend {
+    line-height: 7px;
+    text-transform: capitalize;
+    font-weight: bold;
+    background-color: white;
+    position: absolute;
+    min-width: 50px;
+    padding: 0 5px;
+    height: 8px;
+
+    top: -7px;
+    left: 10px
+}
+
+.shadow {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .2) !important;
+}
